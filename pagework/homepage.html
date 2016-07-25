@@ -14,8 +14,7 @@
 	}
 	.top
 	{
-		
-		border: thin solid #996;
+		border:medium outset #999;
 		position: absolute;
 		top: 0%;
 		height: 10%;
@@ -75,7 +74,7 @@
 	}
 	.I
 	{
-		border: medium solid  #996;
+		border:medium outset #999;
 		position: absolute;
 		top : 11%;
 		width: 100%;
@@ -97,45 +96,124 @@
 		width: 5%;
 		height: 25%;
 	}
+	#movie
+	{
+		position: absolute;
+		top: 39%;
+		left: 10%;
+		right: 10%;
+		width: 10%;
+		height: 5%;
+	}
 	.II
 	{
-		border: medium double #903;
+		border:medium outset #999;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 10%;
+	width: 50%;
+	height: 30%;
+	}
+	#animation
+	{
+		position: absolute;
+		top: 82%;
+		left: 10%;
+		right: 10%;
+		width: 10%;
+		height: 5%;
+	}
+	.III
+	{
+	border:medium outset #999;
+	position: absolute;
+	top: 93%;
+	left: 10%;
+	width: 50%;
+	height: 30%;
+	}
+	#variety
+	{
+		position: absolute;
+		top: 125%;
+		left: 10%;
+		right: 10%;
+		width: 10%;
+		height: 5%;	
+	}
+	.IV
+	{
+	border:medium outset #999;
+	position: absolute;
+	top: 136%;
+	left: 10%;
+	width: 50%;
+	height: 30%;
+	}
+	#game
+	{
+		position: absolute;
+		top: 168%;
+		left: 10%;
+		right: 10%;
+		width: 10%;
+		height: 5%;	
+	}
+	.V
+	{
+	border:medium outset #999;
+	position: absolute;
+	top: 179%;
+	left: 10%;
+	width: 50%;
+	height: 30%;
+	}
+	.VI
+	{
+		border:medium inset #999;
 		position: absolute;
 		top: 36%;
-		left: 2%;
-		right: 2%;
-		width: 96%;
-		height: 40%;
+		right: 10%;
+		width: 25%;
+		height: 30%;
 	}
-	#pic
+	
+	.VII
 	{
-		position:absolute;	
-	}
-	#video
-	{
-		border: thick  groove #CCC;
+		border:medium inset #999;
 		position: absolute;
-		top:240%;
-		left: 2%;
-		right: 2%;
-		width: 96%;
-		height: 100%;
+		top: 68%;
+		right: 10%;
+		width: 25%;
+		height: 30%;
 	}
+	.VIII
+	{
+		border:medium inset #999;
+		position: absolute;
+		top: 100%;
+		right: 10%;
+		width: 25%;
+		height: 30%;
+	}
+	
 </style>
 </head>
 
 <body id = "body">
 
+<!--TOP-->
 <div class = "top"><!--区域TOP含有顶部的一些DIV  有 logo、info、history、favorite、contribute-->
-	<img id = "top_pic" src="TOP.jpg"style= ' width: 100%; height: 100% '/>
+	<img id = "top_pic" src="TOP.jpg" class="img-rounded" alt="Cinque Terre" style= ' width: 100%; height: 100% '/>
  	
  	<div id = "logo"><!--用来设置logo-->
     	<h1> LOGO</h1>
  	</div>
     
 	<div id = "info"><!--用来设置info-->
-    	<img src="photo.jpg" width="50" height="40" /><a href="个人信息.html">测试员,欢迎您！	</a>
-    </div>
+      <img src="photo.jpg"  alt="Cinque Terre" alt="Cinque Terre" width="50" height="40" /><a href="个人信息.html">测试员,欢迎您！	</a>
+  </div>
     
     <div id = "history"><!--用来设置历史记录-->
     	<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">History<span class="caret"></span>
@@ -151,51 +229,124 @@
     </div>
     
     <div id = "favorite"><!--用来设置收藏夹-->
-     	<a href="投稿页面.html">收藏夹</a> 	
+     	<a href = "favorite.html"><input type = "button" value = "收藏夹"/></a>	
     </div>
     
     <div id = "contribute"><!--用来设置发布视频链接至发布页面-->
-     	<a href="投稿页面.html">投稿</a> 	
+     	<a href="投稿页面.html"><input type = "button" value = "投稿"/></a>
    </div>
 </div>
 
+<!--一-->
 <div class = "I"><!--区域I用来设置动画图片-->
-	<img id = "top_pic" src="TOP.jpg"style= ' width: 100%; height: 100% '/>
-    此区域用来放置动画图片
+	<img id = "top_pic" src="TOP.jpg" class="img-rounded" alt="Cinque Terre" style= ' width: 100%; height: 100% '/>
     <!--区域用来设置搜索框及搜索-->
 	<div id = "sou_text">
-		<input type="text" />
+		 <input type="search"  value="请输入关键字" onMouseOver="this.focus()" onBlur="if (value ==''){value='请输入关键字'}" onFocus="this.select()" onClick="if(this.value=='请输入关键字')this.value=''"> <!--input type="text"  placeholder="Video Name"/-->
 	</div>
     <div id = "sou_btn">
-   		<input type = "button" value = "Search"/>
-  
-</div>
-</div>
-
-
-
-
-
-<div class = "II"><!--此区域用来放置分类及下拉菜单显示分类-->
-	<div><!--设置标头-->
-		<h2>电影区</h2>
+   		<a href = "search_result.html"><input type = "button" value = "Search" /></a>
 	</div>
-<div class = "sort">
-    <button type="button" class="btn btn-primary" data-toggle="collapse" 
-   data-target="#demo">
-	刀剑神域
-</button>
-
-<div id="demo" class="collapse out">
-  <a href = "play.html"><img src="示例.jpg" width="200" height="100" /></a>
-   <a href = "play.html"><img src="photo.jpg" width="115" height="98" /></a>
-  </div>
-
 </div>
-<div id = "video"><!--此区域用来放置推荐视频-->
-	<h2>此区域用来放置"推荐视频" + "视频描述" 比如：</h2>
 
-<h2><img src="示例.jpg" alt="" width="400" height="200"><a href="play.html">刀剑神域第一集</a></h2>
+<!--二-->
+<div id = "movie"><!--设置标头-->
+	<h2>电影区</h2>
+</div>
+<div class = "II"><!--此区域用来放置分类及下拉菜单显示分类-->
+
+<ul id="myTab" class="nav nav-tabs">
+	<li class="active">
+      <a href="#sort1" data-toggle="tab">喜剧</a>
+   </li>
+   <li><a href="#sort2" data-toggle="tab">恐怖</a></li>
+   <li><a href="#sort3" data-toggle="tab">科幻</a></li>
+   <li><a href="#sort4" data-toggle="tab">战争</a></li>
+   <li><a href="#sort5" data-toggle="tab">爱情</a></li>
+   <li><a href="#sort6" data-toggle="tab">励志</a></li>
+   <li><a href="#sort7" data-toggle="tab">动作</a></li>
+   <li><a href="#sort8" data-toggle="tab">传记</a></li>
+   <li><a href="#sort9" data-toggle="tab">冒险</a></li>
+   <li><a href="#sort10" data-toggle="tab">历史</a></li>
+   <li><a href="#sort11" data-toggle="tab">伦理</a></li>
+   <li><a href="#sort12" data-toggle="tab">奇幻</a></li>
+ </ul>
+ 
+   <div id="myTabContent" class="tab-content">
+   <div class="tab-pane fade in active" id="sort1"><!--放置内容-->
+      <p><a href = "play.html"><img src="示例.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort2">
+      <p> <a href = "play.html"><img src="photo.jpg" class="img-rounded" alt="Cinque Terre"	width="115" height="98" /></a> </p>
+   </div>
+	<div class="tab-pane fade" id="sort3">
+      <p><a href = "play.html"><img src="1.jpg"	class="img-rounded" alt="Cinque Terre" width=10% height=10% /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort4">
+      <p><a href = "play.html"><img src="2.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a> </p>
+   </div>
+   <div class="tab-pane fade" id="sort5">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort6">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort7">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort8">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort9">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort10">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort11">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+   <div class="tab-pane fade" id="sort12">
+      <p><a href = "play.html"><img src="3.jpg"	class="img-rounded" alt="Cinque Terre" width="200" height="100" /></a></p>
+   </div>
+	</div>
+ 
+</div>
+</div>
+
+<!--三-->
+<div id = "animation">
+	<h2>动漫</h2>
+</div>
+<div class = "III"><!--此区域用来放置动漫推荐视频-->
+<img src="示例.jpg" alt="" style =' width:24% ;height:40%'><a href="play.html">刀剑神域第一集</a>
+</div>
+
+<!--四-->
+<div id = "variety">
+	<h2>综艺</h2>
+</div>
+<div class = "IV"><!--此区域用来放综艺置推荐视频-->
+<img src="示例.jpg" alt="" style =' width:24% ;height:40%'><a href="play.html">刀剑神域第一集</a>
+</div>
+
+<!--五-->
+<div id = "game">
+	<h2>游戏视频</h2>
+</div>
+<div class = "V"><!--此区域用来放游戏视频置推荐视频-->
+<img src="示例.jpg" alt="" style =' width:24% ;height:40%'><a href="play.html">刀剑神域第一集</a>
+</div>
+
+
+<div class ="VI">
+<h1>点击榜</h1>
+</div>
+<div class ="VII">
+<h1>赞数最多</h1>
+</div>
+<div class ="VIII">
+<h1>货币榜</h1>
 </div>
 </body>
 </html>
